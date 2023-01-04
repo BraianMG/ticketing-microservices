@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 
 import { currentUserRouter } from "./routes/current-user";
 import { signinRouter } from "./routes/signin";
-import { signoutRouter } from "./routes/signt";
+import { signoutRouter } from "./routes/signout";
 import { signupRouter } from "./routes/signup";
 import { errorHandler } from "./middlewares/error-handler";
 import cookieSession from "cookie-session";
