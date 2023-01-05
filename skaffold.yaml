@@ -1,19 +1,27 @@
 apiVersion: skaffold/v4beta1
 kind: Config
-build:
-  artifacts:
-  - image: braianmg/auth    
-    context: auth
-    sync:
-      manual:
-      - src: src/**/*.ts    
-        dest: .
-    docker:
-      dockerfile: Dockerfile
-  local:
-    push: false
 manifests:
   rawYaml:
   - ./infra/k8s/*
 deploy:
   kubectl: {}
+build:
+  artifacts:
+  - image: braianmg/auth
+    context: auth
+    sync:
+      manual:
+      - src: "src/**/*.ts"
+        dest: .
+    docker:
+      dockerfile: Dockerfile
+  - image: braianmg/ticketing-client
+    context: client
+    sync:
+      manual:
+      - src: "**/*.js"
+        dest: .
+    docker:
+      dockerfile: Dockerfile
+  local:
+    push: false
