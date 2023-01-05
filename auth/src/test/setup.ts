@@ -4,6 +4,8 @@ import mongoose from "mongoose";
 let mongo: any;
 
 beforeAll(async () => {
+  //jest.setTimeout(10000);
+  process.env.JWT_KEY = 'Asd.123';
   mongo = await MongoMemoryServer.create();
   const mongoUri = mongo.getUri();
 
