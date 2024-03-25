@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: auth
-          image: braianmg/auth
+          image: braianmg/ticketing-auth
           env:
             - name: JWT_KEY
               valueFrom:

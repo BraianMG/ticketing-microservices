@@ -7,7 +7,7 @@ deploy:
   kubectl: {}
 build:
   artifacts:
-  - image: braianmg/auth
+  - image: braianmg/ticketing-auth
     context: auth
     sync:
       manual:
