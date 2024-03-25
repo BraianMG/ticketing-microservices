@@ -10,6 +10,7 @@ import { signupRouter } from "./routes/signup";
 import { errorHandler } from "./middlewares/error-handler";
 
 const app = express();
+// To make sure express knows that it is behind an ingress-nginx proxy and trusts traffic coming from it
 app.set('trust proxy', true);
 app.use(json());
 app.use(cookieSession({
