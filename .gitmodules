@@ -7,3 +7,6 @@
 [submodule "infra"]
 	path = infra
 	url = https://github.com/BraianMG/ticketing-microservices-infra.git
+[submodule "common"]
+	path = common
+	url = https://github.com/BraianMG/ticketing-microservices-common.git
