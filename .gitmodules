@@ -13,3 +13,6 @@
 [submodule "tickets"]
 	path = tickets
 	url = https://github.com/BraianMG/ticketing-microservices-tickets.git
+[submodule "nats-test"]
+	path = nats-test
+	url = https://github.com/BraianMG/ticketing-microservices-nats-test.git
