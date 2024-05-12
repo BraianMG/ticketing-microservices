@@ -16,3 +16,6 @@
 [submodule "nats-test"]
 	path = nats-test
 	url = https://github.com/BraianMG/ticketing-microservices-nats-test.git
+[submodule "orders"]
+	path = orders
+	url = https://github.com/BraianMG/ticketing-microservices-orders.git
