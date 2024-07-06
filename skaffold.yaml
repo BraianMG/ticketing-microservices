@@ -39,5 +39,13 @@ build:
         dest: .
     docker:
       dockerfile: Dockerfile
+  - image: braianmg/ticketing-expiration
+    context: expiration
+    docker:
+      dockerfile: Dockerfile
+    sync:
+      manual:
+        - src: 'src/**/*.ts'
+          dest: .
   local:
     push: false
