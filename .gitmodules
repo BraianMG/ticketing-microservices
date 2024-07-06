@@ -19,3 +19,6 @@
 [submodule "orders"]
 	path = orders
 	url = https://github.com/BraianMG/ticketing-microservices-orders.git
+[submodule "expiration"]
+	path = expiration
+	url = https://github.com/BraianMG/ticketing-microservices-expiration.git
