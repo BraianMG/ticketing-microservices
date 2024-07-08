@@ -47,5 +47,13 @@ build:
       manual:
         - src: 'src/**/*.ts'
           dest: .
+  - image: braianmg/ticketing-payments
+    context: payments
+    docker:
+      dockerfile: Dockerfile
+    sync:
+      manual:
+        - src: 'src/**/*.ts'
+          dest: .
   local:
     push: false
