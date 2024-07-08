@@ -22,3 +22,6 @@
 [submodule "expiration"]
 	path = expiration
 	url = https://github.com/BraianMG/ticketing-microservices-expiration.git
+[submodule "payments"]
+	path = payments
+	url = https://github.com/BraianMG/ticketing-microservices-payments.git
