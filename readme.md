@@ -5,7 +5,9 @@
 - Enable __Kubernetes__ in Docker Desktop configurations
 - Install __Nginx-Ingress__: [https://kubernetes.github.io/ingress-nginx/deploy/#quick-start](https://kubernetes.github.io/ingress-nginx/deploy/#quick-start)
 - Install __Skaffold__ and add it to __path__: [https://skaffold.dev/docs/install/](https://skaffold.dev/docs/install/)
-- Create the necesary __secrets__: `kubectl create secret generic jwt-secret --from-literal=YOUR_CLAVE=YOUR_VALUE`
+- Create the necesary __secrets__: `kubectl create secret generic SECRET_NAME --from-literal=YOUR_KEY=YOUR_VALUE`
+  - JWT secret: `kubectl create secret generic jwt-secret --from-literal=JWT_KEY=d1ff1cu1t_p@55w0rd`
+  - Stripe secret: `kubectl create secret generic stripe-secret --from-literal=STRIPE_KEY=pr1v@t3_k3y`
 - Check the list of __secrets__: `kubectl get secrets`
 - Run all the microservices of the project: `skaffold dev`
 - Go to __ticketing.dev__
